@@ -1,0 +1,98 @@
+[
+	{
+		"id": 1,
+		"Name": "pipipi",
+		"Lat": "1.12012",
+		"Long": "2.12032",
+		"idCompany": 1
+
+	},
+	{
+		"id": 2,
+		"Name": "pepep",
+		"Lat": "4.231212",
+		"Long": "2.12412",
+		"idCompany": 1
+
+	},
+	{
+		"id": 3,
+		"Name": "apapa",
+		"Lat": "2.3101222",
+		"Long": "3.120312",
+		"idCompany": 1
+
+	},
+	{
+		"id": 4,
+		"Name": "tatata",
+		"Lat": "1.232313",
+		"Long": "9.124124",
+		"idCompany": 2
+
+	},
+	{
+		"id": 5,
+		"Name": "tetete",
+		"Lat": "2.343213",
+		"Long": "2.124572",
+		"idCompany": 2
+
+	},
+	{
+		"id": 6,
+		"Name": "tititit",
+		"Lat": "2.129312",
+		"Long": "3.431202",
+		"idCompany": 2
+
+	},
+	{
+		"id": 7,
+		"Name": "lalala",
+		"Lat": "1.1924812",
+		"Long": "1.934210",
+		"idCompany": 3
+
+	},
+	{
+		"id": 8,
+		"Name": "lelelel",
+		"Lat": "4.124112",
+		"Long": "6.124124",
+		"idCompany": 3
+
+	},
+	{
+		"id": 9,
+		"Name": "lololo",
+		"Lat": "1,129818",
+		"Long": "1.283892",
+		"idCompany": 3
+
+	},
+	{
+		"id": 10,
+		"Name": "kakakak",
+		"Lat": "1.0200102",
+		"Long": "2.102942",
+		"idCompany": 4
+
+	},
+	{
+		"id": 11,
+		"Name": "kekekekek",
+		"Lat": "1.022032",
+		"Long": "2.102942",
+		"idCompany": 4
+
+	},
+	{
+		"id": 12,
+		"Name": "kkikikiik",
+		"Lat": "1.0250102",
+		"Long": "2.102342",
+		"idCompany": 4
+
+	}
+]

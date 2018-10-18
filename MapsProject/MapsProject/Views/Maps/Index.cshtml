@@ -1,0 +1,58 @@
+﻿@using System.Configuration
+@{
+	var name = ViewBag.sd;
+	var id = ViewBag.ds;
+	var s = ViewBag.DataCompany;
+	ViewBag.Title = "Index";
+	var key = ConfigurationManager.AppSettings["GoogleApiKey"];
+}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1.0, user-scalable=no" />
+	<title>Maps</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="~/Content/MapsStyles.css" rel="stylesheet" />
+	<link href="~/Content/Site.css" rel="stylesheet" />
+
+</head>
+<body>
+	<div class="col-md-6 headerSearch">
+		<img src="@s" width="9%" height="9%" style="margin-top: -1pc">
+		<label for="Busqueda" class="lblBus lblHHg"></label>
+		<input type="text" value="" id="Busqueda" placeholder="" />
+	</div>
+	<div class="col-md-6 distanceSearch">
+		<label class="lblDistance">Seleccione la distancia</label>
+		<select id="MapDistance" class="sltDistance">
+			<option value="0" selected="selected">20 KM</option>
+			<option value="1">1 KM</option>
+			<option value="3">3 KM</option>
+			<option value="5">5 KM</option>
+			<option value="10">10 KM</option>
+			<option value="20">15 KM</option>
+		</select>
+	</div>
+	<div id="EspecialidadesFill" class="col-md-12">
+	</div>
+	<div id="CountryInfo" class="col-md-12">
+	</div>
+	<div class="col-md-4">
+		<label class="sucgenTitle"></label>
+		<span class="spnSucsError">Lo sentimos, no encontramos sucursales que concuerden con su búsqueda.</span>
+		<div id="Sucursales" class="col-md-12">
+		</div>
+	</div>
+	<div id="map" class="col-md-8"></div>
+<footer style="margin-left: -1px">
+	<input class="hidden" id="Name" value ="@id"/>
+	<h4>Desarrollado por @name &copy; @DateTime.Now.Year . Todos los derechos reservados.</h4>
+</footer>
+
+	<script src="~/Scripts/jquery-latest.min.js" type="text/javascript"></script>
+	<script src="~/Scripts/MapsScripts.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=@key&libraries=places&callback=initMapDa" async defer></script>
+
+</body>
+</html>
+

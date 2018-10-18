@@ -1,0 +1,290 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+
+body, html {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+#map {
+    height: 500px;
+    min-height: 400px;
+    min-width: 300px;
+    max-width: none;
+}
+
+    #map img {
+        max-width: none !important;
+    }
+
+.gm-style-iw {
+    left: 0 !important;
+    background-color: #fff;
+    margin-top: 0.5pc;
+    max-width: 19pc;
+    min-width: 298px;
+    padding: 3px;
+}
+
+#iw-container {
+    margin-bottom: 10px;
+}
+
+    #iw-container .iw-title {
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 1em;
+        font-weight: normal;
+        background-color: transparent;
+        color: black;
+        word-break: break-all;
+        text-align: left;
+    }
+
+    #iw-container .iw-content {
+        font-size: 13px;
+        line-height: 18px;
+        font-weight: 400;
+        margin-right: 1px;
+        padding: 15px 5px 20px 15px;
+        max-height: 140px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+.iw-content img {
+    float: right;
+    margin: 0 5px 5px 10px;
+}
+
+.iw-subTitle {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 5px 0;
+}
+
+.iw-bottom-gradient {
+    position: absolute;
+    width: 326px;
+    height: 25px;
+    bottom: 10px;
+    right: 18px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+}
+
+.gm-style-iw-body {
+    background: #41b6e6;
+    padding: 3px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.lblBus, .lblDistance {
+    display: inline-block;
+    width: 11%;
+    text-align: center;
+}
+
+.lblDistance {
+    width: 25%;
+}
+
+#Busqueda, .sltDistance {
+    display: inline-block;
+    width: 50%;
+    border: 0;
+    border-bottom: 1px solid #c3c3c3;
+    padding: 0.5pc;
+    color: #41b6e6;
+    font-weight: bold;
+}
+
+.sltDistance {
+    background: transparent;
+    cursor: pointer;
+}
+
+.headerSearch {
+    padding: 5px;
+    margin-bottom: 1pc;
+    text-align: center;
+}
+
+.sucursal {
+    border-bottom: 2px solid #c3c3c3;
+    /*display: none;*/
+    cursor: pointer;
+}
+
+    .sucursal:active, .sucursal:focus {
+        background-color: yellow;
+    }
+
+.sucursal-title {
+    color: #41b6e6;
+    font-size: 17px;
+}
+
+.sucursal-item {
+    font-size: 12px;
+    color: #666666;
+}
+
+.displayImp {
+    display: block;
+}
+
+#Sucursales {
+    max-height: 472px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.sucgenTitle {
+    display: block;
+    font-size: 1.2em;
+}
+
+.spnSucsError {
+    text-align: center;
+    color: #c3c3c3;
+    font-size: 0.9em;
+    display: none;
+}
+
+.ulSpecs {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    list-style: none;
+    margin-bottom: 1pc;
+    display: block;
+}
+
+    .ulSpecs li {
+        display: inline-block;
+        width: 15%;
+        text-align: left;
+    }
+
+.liInpEspe {
+    margin-right: 1pc !important;
+}
+
+.SpecList {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 1pc;
+}
+
+    .SpecList ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+
+        .SpecList ul li {
+            display: inline-block;
+            margin-right: 0.5pc;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+            .SpecList ul li:hover {
+                color: green;
+            }
+
+.bolding {
+    font-weight: bolder !important;
+}
+
+.lighting {
+    font-weight: lighter !important;
+}
+
+footer {
+    display: block;
+    width: 100%;
+    border-top: 1px solid #c3c3c3;
+    margin-top: 1pc;
+    float: left;
+}
+
+    footer h4 {
+        text-align: right;
+        font-weight: lighter;
+        font-size: 0.8em;
+    }
+
+#extra-info {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+    #extra-info ul {
+        display: inline-block;
+        width: 19%;
+        margin-right: 0.5pc;
+        list-style: none;
+        padding: 0.5rem;
+        border-bottom: 1px solid gray;
+        margin-bottom: 1pc;
+    }
+
+        #extra-info ul li {
+            display: block;
+            margin-right: 1pc;
+        }
+
+            #extra-info ul li:nth-child(1) {
+                font-weight: bold;
+            }
+
+            #extra-info ul li:nth-child(2) {
+                font-weight: lighter;
+            }
+
+#CountryInfo {
+    margin-bottom: 1pc;
+}
+
+@media (max-width: 1200px) {
+    .ulSpecs li {
+        display: inline-block;
+        width: 33%;
+        text-align: left;
+    }
+}
+
+@media (max-width: 990px) {
+    #Sucursales {
+        max-height: 300px;
+        height: auto;
+        margin-bottom: 2pc;
+    }
+
+    html {
+        overflow-y: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    #EspecialidadesFill {
+        display: none;
+    }
+
+    #CountryInfo {
+        display: none;
+    }
+}
